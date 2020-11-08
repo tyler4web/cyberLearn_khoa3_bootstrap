@@ -120,6 +120,27 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   bottom: 30%;
 }
 
+.carousel-caption__config h1 {
+  font-weight: normal;
+  font-size: 3.3em;
+}
+
+.carousel-caption__config p {
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  line-height: 1.8em;
+}
+
+.btn__readMore {
+  border-radius: 0%;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.btn__readMore:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
