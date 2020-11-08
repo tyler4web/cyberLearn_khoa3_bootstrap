@@ -141,6 +141,11 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   background-color: var(--primary-color);
   color: white;
 }
+
+.modal-title__config {
+  color: var(--primary-color);
+  font-size: 2em;
+}
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
