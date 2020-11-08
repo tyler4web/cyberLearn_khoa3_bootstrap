@@ -111,6 +111,15 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   width: 100%;
 }
 
+/* CAROUSEL */
+.carousel-caption__config {
+  bottom: 35%;
+}
+
+.carousel-indicators__config {
+  bottom: 30%;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
