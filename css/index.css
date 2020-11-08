@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #ff4f81;
+  --hover-color: #12ccc3;
+  --p-color: #999999;
+  --i-color: #333333;
+  --black: black;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #212529;
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+}
+
+.header__left {
+  padding-bottom: 10px;
+}
+
+.header__left span {
+  padding: 0 10px;
+}
+
+.header__right i {
+  height: 30px;
+  width: 30px;
+  background-color: var(--i-color);
+  line-height: 30px;
+  text-align: center;
+}
+
+/* NAVIGATION */
+
+.navbar-brand__logo {
+  text-align: center;
+}
+
+.navbar-brand__logo h1 {
+  margin: 0;
+}
+
+.navbar-brand__logo i {
+  padding-right: 10px;
+}
+
+.navbar-brand__logo p {
+  color: var(--primary-color);
+  font-size: 0.8em;
+}
+
+#navbarNav {
+  /* border: 1px solid red; */
+  justify-content: flex-end;
+}
+
+#navbarNav .navbar-nav .nav-item {
+  margin-left: 10px;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+  color: var(--black);
+  font-weight: bold;
+  padding: 15px;
+  transition: all 0.5s;
+}
+
+#navbarNav .navbar-nav .nav-item:hover .nav-link {
+  color: var(--primary-color);
+  /* border: 1px solid blue; */
+}
+
+nav #navbarNav .navbar-nav .active .nav-link {
+  color: var(--primary-color);
+}
+nav #navbarNav .navbar-nav .active .nav-item__line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.nav-item__line {
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+}
+#navbarNav .navbar-nav .nav-item:hover .nav-item__line {
+  width: 100%;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 750px) and (max-width: 1120px) {
+  .navbar-brand__logo h1 {
+    font-size: 1.5rem;
+  }
+  #navbarNav .navbar-nav .nav-item .nav-link {
+    padding: 7px;
+    font-size: 0.8em;
+  }
+}
