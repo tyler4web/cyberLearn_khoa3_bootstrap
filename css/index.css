@@ -28,6 +28,37 @@ body {
   letter-spacing: 1px;
 }
 
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+h1 + span {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: var(--p-color);
+  font-size: 1.2em;
+  letter-spacing: 4px;
+  text-align: center;
+  display: block;
+}
+.underLine {
+  background-color: black;
+  height: 2px;
+  width: 70px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 header {
   background-color: var(--primary-color);
@@ -112,6 +143,10 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
 }
 
 /* CAROUSEL */
+
+.carousel-item img {
+  height: 550px;
+}
 .carousel-caption__config {
   bottom: 35%;
 }
@@ -146,6 +181,60 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   color: var(--primary-color);
   font-size: 2em;
 }
+
+/* WELCOME */
+#welcome h1 + span {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: black;
+  font-size: 1.2em;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.welcome__line + p {
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__config {
+  padding: 0 40px;
+}
+
+#welcome i {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+/* OUR STATS */
+.stats__content {
+  padding: 70px 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stats__content i,
+.stats__content p {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stats__content h2 {
+  line-height: 80px;
+  font-size: 1.8rem;
+}
+
+#stats {
+  min-height: 400px;
+  background-image: url("../img/banner2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4rem 15px;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
@@ -154,5 +243,25 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   #navbarNav .navbar-nav .nav-item .nav-link {
     padding: 7px;
     font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-caption__config {
+    bottom: 0%;
+  }
+
+  .carousel-indicators__config {
+    bottom: 5%;
+  }
+
+  .carousel-caption__config h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+
+  .carousel-caption__config p {
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    line-height: 1.3em;
   }
 }
