@@ -246,6 +246,10 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   justify-content: space-between;
 }
 
+.offer__content:hover {
+  background-color: var(--hover-color);
+}
+
 .offer__item {
   border: 1px solid red;
   text-align: center;
@@ -268,6 +272,83 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
 .offer__item h3 {
   font-size: 1.3rem;
 }
+
+/* TESTIMONIALS */
+#testimonials {
+  min-height: 400px;
+  background-image: url("../img/banner3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 15px;
+}
+
+#testimonials h1 + span {
+  color: white;
+}
+
+.testimonials-slider {
+  background-color: rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 0px 2px 1px #8e8e8e;
+  -moz-box-shadow: 0px 0px 2px 1px #8e8e8e;
+  -o-box-shadow: 0px 0px 2px 1px #8e8e8e;
+  box-shadow: 0px 0px 2px 1px #8e8e8e;
+  padding: 30px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.testimonials__item {
+  padding-right: 40px;
+}
+
+.item__box {
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.item__box p {
+  color: white;
+  font-size: 15px;
+}
+
+.item__user {
+  margin-left: 15%;
+  color: white;
+}
+.owl-carousel .item__user img {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 10px;
+}
+
+.item__user p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.item__user span {
+  color: var(--primary-color);
+  font-size: 0.7em;
+}
+
+.clear {
+  clear: both;
+}
+
+.item__box::after {
+  content: "";
+  border-top: 9px solid rgba(0, 0, 0, 0.57);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  position: absolute;
+  bottom: -9px;
+  left: 27%;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
