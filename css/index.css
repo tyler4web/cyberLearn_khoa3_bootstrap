@@ -52,11 +52,16 @@ h1 + span {
   text-align: center;
   display: block;
 }
+
+p {
+  color: var(--p-color);
+}
 .underLine {
   background-color: black;
   height: 2px;
   width: 70px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 /* HEADER */
@@ -235,6 +240,34 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   padding: 4rem 15px;
 }
 
+.offer__content {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.offer__item {
+  border: 1px solid red;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 2rem 1rem;
+}
+
+.offer__item i {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.offer__item h3 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.offer__item h3 {
+  font-size: 1.3rem;
+}
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
