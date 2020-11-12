@@ -349,6 +349,17 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   left: 27%;
 }
 
+/* NEWS */
+.news__content {
+  padding-bottom: 50px;
+}
+
+.news__content img {
+  max-height: 200px;
+  border: solid #dedede;
+  margin-bottom: 20px;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 750px) and (max-width: 1120px) {
   .navbar-brand__logo h1 {
