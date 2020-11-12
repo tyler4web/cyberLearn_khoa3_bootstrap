@@ -79,6 +79,9 @@ header {
   padding: 0 10px;
 }
 
+.header__right {
+}
+
 .header__right i {
   height: 30px;
   width: 30px;
@@ -95,6 +98,8 @@ header {
 
 .navbar-brand__logo h1 {
   margin: 0;
+  font-size: 2.5rem;
+  color: black;
 }
 
 .navbar-brand__logo i {
@@ -149,6 +154,10 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
 
 /* CAROUSEL */
 
+#carousel {
+  margin-bottom: 70px;
+}
+
 .carousel-item img {
   height: 550px;
 }
@@ -188,6 +197,10 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
 }
 
 /* WELCOME */
+
+#welcome {
+  margin-bottom: 70px;
+}
 #welcome h1 + span {
   margin-bottom: 15px;
   text-transform: capitalize;
@@ -228,8 +241,9 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
 }
 
 .stats__content h2 {
-  line-height: 80px;
-  font-size: 1.8rem;
+  /* line-height: 80px; */
+  font-size: 1.5rem;
+  margin-top: 25px;
 }
 
 #stats {
@@ -238,6 +252,12 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   background-size: cover;
   background-attachment: fixed;
   padding: 4rem 15px;
+  margin-bottom: 70px;
+}
+
+/* OFFER */
+#offer {
+  margin-bottom: 70px;
 }
 
 .offer__content {
@@ -246,7 +266,7 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   justify-content: space-between;
 }
 
-.offer__content:hover {
+.offer__item:hover {
   background-color: var(--hover-color);
 }
 
@@ -255,6 +275,7 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   text-align: center;
   margin-bottom: 25px;
   padding: 2rem 1rem;
+  transition: all 0.5s;
 }
 
 .offer__item i {
@@ -280,6 +301,7 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   background-size: cover;
   background-attachment: fixed;
   padding: 3rem 15px;
+  margin-bottom: 70px;
 }
 
 #testimonials h1 + span {
@@ -430,23 +452,51 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
     font-size: 0.8em;
   }
 }
+@media screen and (max-width: 768px) {
+  .carousel-caption__config {
+    bottom: 20%;
+  }
+  .carousel-indicators__config {
+    bottom: 10%;
+  }
+  .carousel-caption__config h1 {
+    font-weight: normal;
+    font-size: 2.2em;
+  }
+  .carousel-caption__config p {
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    margin-bottom: 0;
+  }
+  .education-course h2 {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 576px) {
   .carousel-caption__config {
+    bottom: 17%;
+  }
+  .carousel-indicators__config {
     bottom: 0%;
   }
-
-  .carousel-indicators__config {
-    bottom: 5%;
-  }
-
   .carousel-caption__config h1 {
     font-weight: normal;
     font-size: 1.5em;
   }
-
   .carousel-caption__config p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     letter-spacing: 2px;
     line-height: 1.3em;
+    margin-bottom: 0;
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 834px) {
+  .carousel-caption__config h1 {
+    font-weight: normal;
+    font-size: 3em;
+  }
+}
+
+/* TODO fix bug carousel */
