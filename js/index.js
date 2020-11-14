@@ -2,7 +2,7 @@ $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
   responsive: {
@@ -20,4 +20,11 @@ $(".owl-carousel").owlCarousel({
       loop: false,
     },
   },
+});
+
+// call up countup
+
+$(".counter").countUp({
+  time: 2000,
+  delay: 10,
 });

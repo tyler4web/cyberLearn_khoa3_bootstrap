@@ -162,11 +162,11 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   height: 550px;
 }
 .carousel-caption__config {
-  bottom: 35%;
+  bottom: 20%;
 }
 
 .carousel-indicators__config {
-  bottom: 30%;
+  bottom: 10%;
 }
 
 .carousel-caption__config h1 {
@@ -449,7 +449,7 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
   }
   #navbarNav .navbar-nav .nav-item .nav-link {
     padding: 7px;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -475,10 +475,10 @@ nav #navbarNav .navbar-nav .active .nav-item__line {
 }
 @media screen and (max-width: 576px) {
   .carousel-caption__config {
-    bottom: 17%;
+    bottom: 30%;
   }
   .carousel-indicators__config {
-    bottom: 0%;
+    bottom: 20%;
   }
   .carousel-caption__config h1 {
     font-weight: normal;
